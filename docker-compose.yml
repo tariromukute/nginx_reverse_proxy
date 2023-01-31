@@ -1,0 +1,25 @@
+version: '2'
+services:
+  webservice1:
+    container_name: site1
+    image: nginx:stable
+    volumes:
+      - ./webservice1:/usr/share/nginx/html/
+    expose:
+      - "80"
+
+  webservice2:
+    container_name: site2
+    image: nginx:stable
+    volumes:
+      - ./webservice2:/usr/share/nginx/html/
+    expose:
+      - "80"
+
+  proxy:
+    build:
+      context: ./proxy
+      dockerfile: Dockerfile
+    ports:
+      - 80:80
+      - 443:443
