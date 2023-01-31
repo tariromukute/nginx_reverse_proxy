@@ -28,3 +28,8 @@ Edit file /etc/hosts, add the contents below or similar
 ```bash
 docker compose up
 ```
+
+## Resources
+
+- [How to set up NGINX Docker Reverse Proxy?](https://dev.to/sukhbirsekhon/what-is-docker-reverse-proxy-45mm)
+- [SSL Configuration Generator](https://ssl-config.mozilla.org/#server=nginx)
