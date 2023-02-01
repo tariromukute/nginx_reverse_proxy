@@ -8,6 +8,16 @@ services:
     expose:
       - "80"
 
+  apiservice1:
+    container_name: api1
+    build:
+      context: ./apiservice1
+      dockerfile: Dockerfile
+    expose:
+      - "8080"
+    ports:
+      - 8080:8080
+
   webservice2:
     container_name: site2
     image: nginx:stable

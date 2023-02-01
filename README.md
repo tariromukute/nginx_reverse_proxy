@@ -33,3 +33,4 @@ docker compose up
 
 - [How to set up NGINX Docker Reverse Proxy?](https://dev.to/sukhbirsekhon/what-is-docker-reverse-proxy-45mm)
 - [SSL Configuration Generator](https://ssl-config.mozilla.org/#server=nginx)
+- [Dockerizing a Node.js web app](https://nodejs.org/en/docs/guides/nodejs-docker-webapp/)
